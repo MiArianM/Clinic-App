@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneFlip, faStar } from "@fortawesome/free-solid-svg-icons";
 export default function Home() {
@@ -39,8 +38,4 @@ export default function Home() {
       </div>
     </>
   );
-=======
-export default function Home() {
-  return <div className="container px-3 h-10 bg-amber-600"></div>;
->>>>>>> 219abd36599a1acddd9505b34939ae3db466a2e8
 }
