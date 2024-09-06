@@ -6,7 +6,22 @@
   --background: #ffffff;
   --foreground: #171717;
 }
-
+@font-face {
+  font-family: 'Menu';
+  src: url('../../public/Fonts/Majed_MRT.ttf');
+}
+@font-face {
+  font-family: 'Alertdescription';
+  src: url('../../public/Fonts/Parand_MRT.TTF');
+}
+@font-face {
+  font-family: 'Title';
+  src: url('../../public/Fonts/Baseet_MRT.ttf');
+}
+@font-face {
+  font-family: 'button';
+  src: url('../../public/Fonts/Net_MRT.ttf');
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
