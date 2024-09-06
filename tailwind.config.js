@@ -16,8 +16,11 @@ module.exports = {
       fontFamily: {
         menu: ["Menu", "sans-serif"],
         Alertdescription: ["Alertdescription", "sans-serif"],
+<<<<<<< HEAD
         title: ["Title", "sans-serif"],
         button: ["button", "sans-serif"],
+=======
+>>>>>>> 219abd36599a1acddd9505b34939ae3db466a2e8
       },
       spacing: {
         144: "36rem",

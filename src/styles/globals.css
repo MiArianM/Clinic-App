@@ -14,6 +14,7 @@
   font-family: 'Alertdescription';
   src: url('../../public/Fonts/Parand_MRT.TTF');
 }
+<<<<<<< HEAD
 @font-face {
   font-family: 'Title';
   src: url('../../public/Fonts/Baseet_MRT.ttf');
@@ -22,6 +23,8 @@
   font-family: 'button';
   src: url('../../public/Fonts/Net_MRT.ttf');
 }
+=======
+>>>>>>> 219abd36599a1acddd9505b34939ae3db466a2e8
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
