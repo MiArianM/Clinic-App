@@ -1,28 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
 import { useTheme } from "next-themes";
 
-const Switcher = () => {
-  const [isChecked, setIsChecked] = useState(false);
+const Switcher = ({ className }) => {
   const { theme, setTheme } = useTheme();
-
   const handleCheckboxChange = () => {
     setTheme(theme === "dark" ? "light" : "dark");
-    setIsChecked(!isChecked);
   };
 
   return (
     <>
-      <label className="themeSwitcherThree relative inline-flex cursor-pointer select-none items-center">
+      <label
+        className={`${className} themeSwitcherThree relative inline-flex cursor-pointer select-none items-center`}
+      >
         <input
           type="checkbox"
-          checked={isChecked}
           onChange={handleCheckboxChange}
           className="sr-only"
         />
         <div className="shadow-card flex h-[46px] w-[82px] items-center justify-center rounded-md ">
           <span
             className={`flex h-9 w-9 items-center justify-center rounded ${
-              !isChecked ? "bg-primary text-rose-100" : "text-pink-500"
+              theme === "dark" ? "text-rose-200" : "text-pink-500"
             }`}
           >
             <svg
@@ -49,7 +47,7 @@ const Switcher = () => {
           </span>
           <span
             className={`flex h-9 w-9 items-center justify-center rounded ${
-              isChecked ? " text-rose-200" : "text-pink-500"
+              theme !== "dark" ? "text-rose-200" : "text-pink-500"
             }`}
           >
             <svg

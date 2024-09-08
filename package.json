@@ -12,6 +12,8 @@
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "animate.css": "^4.1.1",
+    "img-comparison-slider": "^8.0.6",
     "next": "14.2.8",
     "next-themes": "^0.3.0",
     "react": "^18",
