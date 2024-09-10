@@ -13,15 +13,14 @@ function Head() {
         }`}
       >
         <h2 className="brightness-120 text-center font-title text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl">
-          کلینیک دکتر آنیتا پورحسین٬قدم در راهی جهت زیبایی مشتریان خود بر می
-          دارد
+          این کلینیک٬قدم در راهی جهت زیبایی مشتریان خود بر می دارد
         </h2>
         <div className="flex justify-center gap-10 mt-2">
-          <button className=" flex items-center text-2xl px-5 sm:text-3xl sm:px-10 lg:py-1 lg:p-12  xl:text-3xl 2xl:text-5xl font-button gap-1 rounded-3xl transition-all bg-red-200 hover:bg-red-300">
+          <button className="dark:bg-rose-400 dark:opacity-90  flex items-center text-2xl px-5 sm:text-3xl sm:px-10 lg:py-1 lg:p-12  xl:text-3xl 2xl:text-5xl font-button gap-1 rounded-3xl transition-all bg-red-200 hover:bg-red-300">
             <FontAwesomeIcon icon={faStar} />
             <span>چرا ما ؟</span>
           </button>
-          <button className="flex items-center text-2xl px-5 sm:text-3xl sm:px-10 lg:py-1 lg:p-12  xl:text-3xl 2xl:text-5xl font-button gap-1 rounded-3xl transition-all bg-red-200 hover:bg-red-300">
+          <button className="dark:bg-rose-400 dark:opacity-90 flex items-center text-2xl px-5 sm:text-3xl sm:px-10 lg:py-1 lg:p-12  xl:text-3xl 2xl:text-5xl font-button gap-1 rounded-3xl transition-all bg-red-200 hover:bg-red-300">
             <FontAwesomeIcon icon={faPhoneFlip} />
             رزرو نوبت‌ !
           </button>

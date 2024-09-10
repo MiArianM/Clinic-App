@@ -58,7 +58,23 @@ body {
   line-height: 100%;
   text-align: center;
 }
+.swiper {
+  margin-top: 5rem;
+}
 
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#darkSwiper .swiper-pagination-bullet{
+  background: aqua !important;
+}
+#lightSwiper .swiper-pagination-bullet{
+  background: rgb(255, 0, 225) !important;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;

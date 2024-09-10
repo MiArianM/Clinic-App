@@ -10,6 +10,6 @@ export const NavList = [
     ],
   },
   { name: "درباره", dropdown: [] },
-  { name: "اخبار کلینیک", dropdown: [] },
+  { name: "نمونه کار ها", dropdown: [] },
   { name: "تماس با ما", dropdown: [] },
 ];

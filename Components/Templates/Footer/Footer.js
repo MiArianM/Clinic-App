@@ -1,5 +1,5 @@
 import React from "react";
-import { FootList } from "./data";
+import { FootList } from "../../data/FooterList.js";
 import Image from "next/image";
 function Footer() {
   return (
@@ -9,7 +9,7 @@ function Footer() {
           <div className="mb-6 md:mb-0 flex items-center">
             <a className="text-3xl font-bold leading-none" href="#">
               <Image
-                className="shadow-xl dark:shadow-slate-800 border-opacity-25 border-gray-500 border-l-2 border-solid"
+                className="hover:border-l-4 hover:shadow-xl transition-all shadow-lg dark:shadow-slate-800 border-opacity-25 border-gray-500 border-l-2 border-solid"
                 width={500}
                 height={300}
                 src={"/logo.png"}
