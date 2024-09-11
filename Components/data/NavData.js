@@ -1,5 +1,5 @@
 export const NavList = [
-  { name: "مجله کلینیک", dropdown: [] },
+  { name: "مجله کلینیک", dropdown: [], id: "Posts" },
   {
     name: "خدمات",
     dropdown: [
@@ -8,8 +8,9 @@ export const NavList = [
       { name: "ٓژل", id: "jel" },
       { name: "مزوتراپی", id: "mezo" },
     ],
+    id: "Services",
   },
-  { name: "درباره", dropdown: [] },
-  { name: "نمونه کار ها", dropdown: [] },
-  { name: "تماس با ما", dropdown: [] },
+  { name: "درباره", dropdown: [], id: "About" },
+  { name: "نمونه کار ها", dropdown: [], id: "Samples" },
+  { name: "تماس با ما", dropdown: [], id: "Contact" },
 ];

@@ -10,7 +10,7 @@ export default function App() {
   const { theme } = useTheme();
   return (
     <div className="container mt-28 text-center">
-      <h3 className="text-4xl font-title">نظرات مشتریان کلینیک در مورد ما</h3>
+      <h3 className="text-4xl font-title">نظرات مشتریان کلینیک</h3>
       <Swiper
         dir="rtl"
         pagination={{
@@ -36,8 +36,8 @@ export default function App() {
         className="mySwiper mt-40 h-[30rem] sm:h-[25rem]"
         id={theme === "dark" ? "darkSwiper" : "lightSwiper"}
       >
-        {comments.map((comment) => (
-          <SwiperSlide>
+        {comments.map((comment, index) => (
+          <SwiperSlide key={index}>
             <div className="bg-amber-100 dark:bg-teal-700 dark:text-slate-100 text-slate-700 mr-10 p-10 ml-10 rounded-lg flex flex-col justify-center h-96 sm:h-72">
               <h5 className="justify-self-start font-service text-3xl">
                 {comment.author}

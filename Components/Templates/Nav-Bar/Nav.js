@@ -28,9 +28,9 @@ function Navbar() {
     <div className="relative z-40">
       <nav className="relative px-4 py-4 flex items-center bg-white dark:bg-gray-900 justify-between">
         <div className="flex items-center gap-3">
-          <a className="text-3xl font-bold leading-none" href="#">
+          <Link className="text-3xl font-bold leading-none" href="/">
             <Image src={"/logo.png"} width={100} height={100} />
-          </a>
+          </Link>
           {showComponent && (
             <Switcher
               className={`${
@@ -58,7 +58,7 @@ function Navbar() {
               <li>
                 <Link
                   className="animate__animated animate__fadeInUp font-menu text-sm lg:text-lg xl:text-xl 2xl:text-2xl text-gray-400 dark:text-gray-200 dark:hover:text-gray-50 hover:text-gray-500"
-                  href={"#"}
+                  href={"/" + item.id}
                 >
                   {item.name}
                 </Link>
@@ -96,9 +96,9 @@ function Navbar() {
           <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
           <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white dark:bg-slate-700 border-r overflow-y-auto ">
             <div className="flex mb-8 justify-between">
-              <a className="text-3xl leading-none" href="#">
+              <Link className="text-3xl leading-none" href="/">
                 <Image src={"/logo.png"} width={84} height={100} />
-              </a>
+              </Link>
               <button onClick={toggleMenu} className="navbar-close">
                 <svg
                   className="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"

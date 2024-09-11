@@ -19,6 +19,7 @@ function BeforeAfter() {
                   src={"/" + sample.After}
                   width={405}
                   height={380}
+                  alt="After"
                 />
               </figure>
               <figure slot="second" className="after">
@@ -30,6 +31,7 @@ function BeforeAfter() {
                   src={"/" + sample.Before}
                   width={405}
                   height={380}
+                  alt="Before"
                 />
               </figure>
             </div>

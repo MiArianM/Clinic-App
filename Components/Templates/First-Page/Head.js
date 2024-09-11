@@ -2,8 +2,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneFlip, faStar } from "@fortawesome/free-solid-svg-icons";
 import React, { useContext } from "react";
 import { context } from "../context";
+import Link from "next/link";
 FontAwesomeIcon;
-function Head() {
+function Header() {
   const menudata = useContext(context);
   return (
     <div className="relative flex justify-center flex-col items-center">
@@ -16,14 +17,19 @@ function Head() {
           این کلینیک٬قدم در راهی جهت زیبایی مشتریان خود بر می دارد
         </h2>
         <div className="flex justify-center gap-10 mt-2">
-          <button className="dark:bg-rose-400 dark:opacity-90  flex items-center text-2xl px-5 sm:text-3xl sm:px-10 lg:py-1 lg:p-12  xl:text-3xl 2xl:text-5xl font-button gap-1 rounded-3xl transition-all bg-red-200 hover:bg-red-300">
-            <FontAwesomeIcon icon={faStar} />
-            <span>چرا ما ؟</span>
-          </button>
-          <button className="dark:bg-rose-400 dark:opacity-90 flex items-center text-2xl px-5 sm:text-3xl sm:px-10 lg:py-1 lg:p-12  xl:text-3xl 2xl:text-5xl font-button gap-1 rounded-3xl transition-all bg-red-200 hover:bg-red-300">
-            <FontAwesomeIcon icon={faPhoneFlip} />
-            رزرو نوبت‌ !
-          </button>
+          <Link href="#">
+            <button className="dark:bg-rose-400 dark:opacity-90 dark:hover:opacity-100  flex items-center text-2xl px-5 sm:text-3xl sm:px-10 lg:py-1 lg:p-12  xl:text-3xl 2xl:text-5xl font-button gap-1 rounded-3xl transition-all bg-red-200 hover:bg-red-300">
+              <FontAwesomeIcon icon={faStar} />
+              <span>چرا ما ؟</span>
+            </button>
+          </Link>
+
+          <Link href="tel:09931827935">
+            <button className="dark:bg-rose-400 dark:opacity-90 dark:hover:opacity-100 flex items-center text-2xl px-5 sm:text-3xl sm:px-10 lg:py-1 lg:p-12  xl:text-3xl 2xl:text-5xl font-button gap-1 rounded-3xl transition-all bg-red-200 hover:bg-red-300">
+              <FontAwesomeIcon icon={faPhoneFlip} />
+              <span>رزرو نوبت !</span>
+            </button>
+          </Link>
         </div>
       </div>
       <video
@@ -45,4 +51,4 @@ function Head() {
   );
 }
 
-export default Head;
+export default Header;
