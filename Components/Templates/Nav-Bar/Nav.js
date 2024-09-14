@@ -14,7 +14,7 @@ function Navbar() {
     }, 20);
     const timer2 = setTimeout(() => {
       setsmoothComes(true);
-    }, 50);
+    }, 1000);
 
     return () => {
       clearTimeout(timer1);
@@ -29,7 +29,7 @@ function Navbar() {
       <nav className="relative px-4 py-4 flex items-center bg-white dark:bg-gray-900 justify-between">
         <div className="flex items-center gap-3">
           <Link className="text-3xl font-bold leading-none" href="/">
-            <Image src={"/logo.png"} width={100} height={100} />
+            <Image src={"/logo.png"} width={100} height={100} alt="Logo" />
           </Link>
           {showComponent && (
             <Switcher
@@ -77,18 +77,18 @@ function Navbar() {
         </ul>
         <div>
           {" "}
-          <a
+          <Link
             className="hidden transition-all duration-200 lg:inline-block  lg:ml-3 py-2 px-6 bg-gray-100 dark:bg-slate-400 dark:hover:bg-slate-300 dark:text-slate-950 hover:bg-gray-100 text-xl text-gray-900 font-menu rounded-xl"
-            href="#"
+            href="/Login"
           >
             ورود
-          </a>
-          <a
+          </Link>
+          <Link
             className="hidden transition-all duration-200 lg:inline-block py-2 px-6 bg-blue-500 dark:hover:bg-blue-400 hover:bg-blue-600 dark:bg-blue-900 text-xl text-white font-menu rounded-xl"
-            href="#"
+            href="/Signup"
           >
             ثبت نام
-          </a>
+          </Link>
         </div>
       </nav>
       {menudata.menuOpen && (
@@ -97,7 +97,7 @@ function Navbar() {
           <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white dark:bg-slate-700 border-r overflow-y-auto ">
             <div className="flex mb-8 justify-between">
               <Link className="text-3xl leading-none" href="/">
-                <Image src={"/logo.png"} width={84} height={100} />
+                <Image src={"/logo.png"} width={84} height={100} alt="Logo" />
               </Link>
               <button onClick={toggleMenu} className="navbar-close">
                 <svg
@@ -131,18 +131,18 @@ function Navbar() {
             </div>
             <div className="mt-auto">
               <div className="pt-6">
-                <a
+                <Link
                   className="block transition-all duration-200 lg:inline-block  lg:ml-3 py-2 px-6 bg-gray-100 dark:bg-slate-400 dark:hover:bg-slate-300 dark:text-slate-950 hover:bg-gray-100 text-xl text-gray-900 font-menu rounded-xl text-center"
-                  href="#"
+                  href="/Login"
                 >
                   ورود
-                </a>
-                <a
+                </Link>
+                <Link
                   className="mt-4 block transition-all duration-200 lg:inline-block py-2 px-6 bg-blue-500 dark:hover:bg-blue-400 hover:bg-blue-600 dark:bg-blue-900 text-xl text-white font-menu rounded-xl text-center"
-                  href="#"
+                  href="/Signup"
                 >
                   ثبت نام
-                </a>
+                </Link>
               </div>
               <span className=" font-bold text-sm text-gray-500 sm:text-center dark:text-gray-400">
                 <a

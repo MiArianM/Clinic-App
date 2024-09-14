@@ -13,9 +13,10 @@ function Header() {
           menudata.menuOpen ? "translate-x-80" : "translate-x-0"
         }`}
       >
-        <h2 className="brightness-120 text-center font-title text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl">
-          این کلینیک٬قدم در راهی جهت زیبایی مشتریان خود بر می دارد
-        </h2>
+        <h1 className="brightness-120 text-center font-title text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl">
+          این کلینیک٬قدم در راهی جهت ارائه خدمات زیبایی مربوط به پوست٬مو و
+          زیبایی مشتریان خود بر می دارد
+        </h1>
         <div className="flex justify-center gap-10 mt-2">
           <Link href="#">
             <button className="dark:bg-rose-400 dark:opacity-90 dark:hover:opacity-100  flex items-center text-2xl px-5 sm:text-3xl sm:px-10 lg:py-1 lg:p-12  xl:text-3xl 2xl:text-5xl font-button gap-1 rounded-3xl transition-all bg-red-200 hover:bg-red-300">
@@ -33,7 +34,7 @@ function Header() {
         </div>
       </div>
       <video
-        className="brightness-75 dark:brightness-50 w-full relative -top-56 sm:-top-52 md:-top-64 xl:-top-96 2xl:-top-[25rem] z-30 bg-white"
+        className="brightness-75 dark:brightness-50 w-full relative -top-56 sm:-top-60 md:-top-72 xl:-top-96 2xl:-top-[35rem] z-30 bg-white"
         src={"clinic.mp4"}
         type="video/mp4"
         muted

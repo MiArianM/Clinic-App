@@ -55,4 +55,18 @@ export const Cards = [
     id: "Hyfo",
     icon: "https://i.postimg.cc/QdHgbc3k/hyfotherapy.png",
   },
+  {
+    title: "خال برداری",
+    description:
+      "خال‌برداری یک روش برای حذف خال‌ها و ضایعات پوستی است که به بهبود ظاهر پوست و کاهش خطر ابتلا به سرطان کمک می‌کند.",
+    id: "Khal-Bardari",
+    icon: "https://i.postimg.cc/cC4gpsqN/mole.png",
+  },
+  {
+    title: "جراحی پوستی",
+    description:
+      "جراحی‌های پوستی شامل درمان مشکلات پوستی و بازسازی نواحی آسیب‌دیده هستند و می‌توانند به بهبود زیبایی و عملکرد پوست کمک کنند.",
+    id: "Skin-Surgery",
+    icon: "https://i.postimg.cc/9MBwgDnp/face.png",
+  },
 ];

@@ -31,14 +31,12 @@ function Services() {
         <div className="bg-gray-100 text-slate-600 dark:bg-slate-600 dark:text-slate-300 dark:hover:text-slate-50 text-4xl p-4 shadow-lg font-regular transition-all rounded-md dark:hover:bg-indigo-500 hover:bg-indigo-200 hover:rounded-none hover:scale-110 hover:text-white cursor-pointer">
           بوتاکس
         </div>
-      </div>
-      <div className="absolute left-1/4 blur-sm dark:blur-2xl z-10 rounded-br-3xl w-1/2 h-[224px] opacity-60 mr-72 bg-gradient-to-r from-pink-200 to-stone-100 dark:opacity-40 dark:from-slate-100 dark:to-stone-400"></div>
-      <div className="flex mb-20 mt-20 items-end w-full">
-        <hr className="border-pink-700 dark:border-slate-300  h-2 w-full z-30 opacity-65 mt-20" />
-        <h3 className="text-violet-600 dark:text-fuchsia-800 align-bottom w-full font-title text-5xl">
-          چند نمونه کار
-        </h3>
-        <hr className="border-pink-500 dark:border-slate-300  h-2 w-full z-30 opacity-65 mt-20" />
+        <div className="bg-gray-100 col-span-2 text-slate-600 dark:bg-slate-600 dark:text-slate-300 dark:hover:text-slate-50 text-4xl p-4 shadow-lg font-regular transition-all rounded-md dark:hover:bg-indigo-500 hover:bg-indigo-200 hover:rounded-none hover:scale-110 hover:text-white cursor-pointer">
+          خال برداری
+        </div>
+        <div className="bg-gray-100  col-span-2 text-slate-600 dark:bg-slate-600 dark:text-slate-300 dark:hover:text-slate-50 text-4xl p-4 shadow-lg font-regular transition-all rounded-md dark:hover:bg-indigo-500 hover:bg-indigo-200 hover:rounded-none hover:scale-110 hover:text-white cursor-pointer">
+          جراحی پوستی
+        </div>
       </div>
     </div>
   );

@@ -11,6 +11,7 @@ function Me() {
           <Image
             className="dark:opacity-95 "
             src={"/AnitaPourhossein copy.png"}
+            alt="Dr.AnitaPourhossein"
             width={428}
             height={400}
           />
@@ -43,6 +44,7 @@ function Me() {
           <Image
             className="dark:opacity-95"
             src={"/SaeidKaviani copy.png"}
+            alt="Dr.SaeidKaviani"
             width={430}
             height={400}
           />

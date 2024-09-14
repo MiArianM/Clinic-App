@@ -10,7 +10,9 @@ export default function App() {
   const { theme } = useTheme();
   return (
     <div className="container mt-28 text-center">
-      <h3 className="text-4xl font-title">نظرات مشتریان کلینیک</h3>
+      <h3 className="text-4xl font-title text-slate-500 dark:text-slate-300">
+        نظرات مشتریان کلینیک
+      </h3>
       <Swiper
         dir="rtl"
         pagination={{

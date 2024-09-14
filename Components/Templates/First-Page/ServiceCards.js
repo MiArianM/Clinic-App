@@ -16,11 +16,11 @@ function ServiceCards() {
         این کلینیک تحت نظارت دکتر آنیتا پورحسین و دکتر سعید کاویانی ٬ از
         جدیدترین تکنیک و متد ها جهت ارائه خدمات به مشتریان کلینیک بهره می برد:
       </h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 md:gap-y-36  gap-x-5 mt-8">
+      <div className="grid mr-5 ml-5 sm:mr-0 sm:ml-0 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 md:gap-y-36  gap-x-5 mt-8">
         {Cards.map((card, index) => (
           <div
             key={index}
-            className="flex flex-col justify-center items-center bg-pink-100 dark:bg-slate-700 hover:shadow-red-500 dark:hover:shadow-pink-600 hover:shadow-md hover:scale-105 dark:hover:shadow-lg transition-all shadow-none"
+            className="last:col-start-2 cards flex flex-col justify-center items-center bg-pink-100 dark:bg-slate-700 hover:shadow-red-500 dark:hover:shadow-pink-600 hover:shadow-md hover:scale-105 dark:hover:shadow-lg transition-all shadow-none"
           >
             <div className="bg-slate-100 rounded-full -mt-5">
               <img

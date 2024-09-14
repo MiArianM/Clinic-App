@@ -1,0 +1,12 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "تست ۱ آلفا",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaBb0Pc3hOfJVlgS3SbSovYhloKZ8gm4vko0nhTF6YU5RRSEEwwKn-EkU5F0v6mq519Y4&usqp=CAU",
+      "category": "pdfpost",
+      "description": "این یک متن تست برای کار های تخصصی است.",
+      "date": "1403/6/24"
+    }
+  ]
+}
