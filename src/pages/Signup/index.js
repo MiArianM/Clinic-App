@@ -150,13 +150,13 @@ function Signup() {
               "url('https://i.postimg.cc/nh9x7Qmg/download.webp')",
           }}
         >
-          <div class="flex items-center h-full px-20 dark:bg-gray-800 bg-gray-500 dark:bg-opacity-65 bg-opacity-60">
+          <div className="flex items-center h-full px-20 dark:bg-gray-800 bg-gray-500 dark:bg-opacity-65 bg-opacity-60">
             <div>
-              <h2 class="text-4xl font-title font-bold dark:text-slate-300 text-slate-100">
+              <h2 className="text-4xl font-title font-bold dark:text-slate-300 text-slate-100">
                 کلینیک سلامت پوست مو اصفهان
               </h2>
 
-              <p class="max-w-xl text-2xl font-regular mt-3 text-gray-200 dark:text-slate-900 bg-slate-400 bg-opacity-90 p-5 rounded-3xl">
+              <p className="max-w-xl text-2xl font-regular mt-3 text-gray-200 dark:text-slate-900 bg-slate-400 bg-opacity-90 p-5 rounded-3xl">
                 به راحتی با ثبت نام در این سایت ٬از زمان ساعت های رزرو در دسترس
                 مطلع شوید و حتی در خانه خود٬ به شکل آنلاین خدمات خود را در ساعت
                 مد نظر در روز مشخص تعیین و وقت کلینیک را برای خود رزرو نمایید
@@ -249,11 +249,11 @@ function Signup() {
                 <span className="font-button text-2xl">ثبت نام</span>
               </button>
             </form>
-            <p class="mt-6 text-2xl font-button text-center text-gray-400">
+            <p className="mt-6 text-2xl font-button text-center text-gray-400">
               قبلا ثبت نام کردی ؟
               <Link
                 href="/Login"
-                class="text-blue-500 mr-3 text-xl font-button focus:outline-none hover:underline-offset-8 focus:underline hover:underline"
+                className="text-blue-500 mr-3 text-xl font-button focus:outline-none hover:underline-offset-8 focus:underline hover:underline"
               >
                 ورود
               </Link>

@@ -8,7 +8,7 @@ function ServiceCards() {
       <div className="flex mb-20 mt-20 items-end w-full">
         <hr className="border-pink-700 dark:border-slate-300  h-2 w-full z-30 opacity-65 mt-20" />
         <h3 className="text-violet-600 dark:text-fuchsia-800 align-bottom w-full font-title text-3xl">
-          خدمات کلینیک دقیقن تو زیبایی ما چه تاثیری دارن ؟
+          خدمات کلینیک دقیقا تو زیبایی ما چه تاثیری دارند ؟
         </h3>
         <hr className="border-pink-500 dark:border-slate-300  h-2 w-full z-30 opacity-65 mt-20" />
       </div>
@@ -20,7 +20,7 @@ function ServiceCards() {
         {Cards.map((card, index) => (
           <div
             key={index}
-            className="last:col-start-2 cards flex flex-col justify-center items-center bg-pink-100 dark:bg-slate-700 hover:shadow-red-500 dark:hover:shadow-pink-600 hover:shadow-md hover:scale-105 dark:hover:shadow-lg transition-all shadow-none"
+            className="sm:last:col-start-2 cards flex flex-col justify-center items-center bg-pink-100 dark:bg-slate-700 hover:shadow-red-500 dark:hover:shadow-pink-600 hover:shadow-md hover:scale-105 dark:hover:shadow-lg transition-all shadow-none"
           >
             <div className="bg-slate-100 rounded-full -mt-5">
               <img

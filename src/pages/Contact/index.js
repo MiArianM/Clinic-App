@@ -134,7 +134,7 @@ function ContactSection() {
                         id="name"
                         autoComplete="given-name"
                         placeholder="اسم خود را وارد کنید"
-                        className="mb-2 w-full font-regular rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                        className="mb-2 w-full font-regular text-gray-800 rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
                         name="name"
                       />
                     </div>
@@ -148,7 +148,7 @@ function ContactSection() {
                         id="email"
                         autoComplete="email"
                         placeholder="ایمیل خود را وارد کنید"
-                        className="mb-2 w-full font-regular rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                        className="mb-2 w-full font-regular rounded-md border text-gray-800  border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
                         name="email"
                       />
                     </div>
@@ -164,14 +164,14 @@ function ContactSection() {
                       cols="30"
                       rows="5"
                       placeholder="پیام خود را بنویسید"
-                      className="mb-2 w-full rounded-md font-regular border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                      className="mb-2 text-gray-800  w-full rounded-md font-regular border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
                     ></textarea>
                   </div>
                 </div>
                 <div className="text-center">
                   <button
                     type="submit"
-                    className="w-full bg-blue-800 font-title text-white px-6 py-3 font-xl rounded-md sm:mb-0"
+                    className="w-full hover:bg-blue-900 transition-all duration-300 bg-blue-800 font-title text-white px-6 py-3 font-xl rounded-md sm:mb-0"
                   >
                     ارسال پیام
                   </button>

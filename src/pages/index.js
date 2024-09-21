@@ -27,55 +27,59 @@ export default function Home({ country }) {
     };
   }, []);
   return (
-    <>
-      <Head>
-        <title>کلینیک زیبایی درمانی پوست و مو اصفهان</title>
-        <meta
-          name="description"
-          content="کلینیک تخصصی پوست، مو و زیبایی در اصفهان ارائه‌دهنده خدمات بوتاکس، مزونیدلینگ، هایفوتراپی، تزریق فیلر، و جراحی‌های پوستی با کد نظام پزشکی معتبر دو متخصص پوست میباشد."
-        />
-        <meta
-          property="og:title"
-          content="کلینیک پوست، مو و زیبایی در اصفهان | بهترین خدمات زیبایی و درمانی"
-        />
-        <meta
-          property="og:description"
-          content="کلینیک تخصصی پوست، مو و زیبایی در اصفهان ارائه‌دهنده خدمات بوتاکس، مزونیدلینگ، هایفوتراپی، تزریق فیلر و جراحی‌های پوستی میباشد."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourwebsite.com" />
-        <meta property="og:image" content="https://yourwebsite.com/image.jpg" />
-        <meta property="og:locale" content="fa_IR" />
-        <meta
-          property="og:site_name"
-          content="کلینیک زیبایی درمانی پوست و مو اصفهان"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="کلینیک پوست، مو و زیبایی در اصفهان | بهترین خدمات زیبایی و درمانی"
-        />
-        <meta
-          name="twitter:description"
-          content="کلینیک تخصصی پوست، مو و زیبایی در اصفهان ارائه‌دهنده خدمات بوتاکس، مزونیدلینگ، هایفوتراپی، تزریق فیلر و جراحی‌های پوستی میباشد."
-        />
-        <meta
-          name="twitter:image"
-          content="https://yourwebsite.com/image.jpg"
-        />
-        <meta name="twitter:site" content="@yourclinic" />
-      </Head>
-      {showComponent && (
+    showComponent &&
+    country && (
+      <>
+        <Head>
+          <title>کلینیک زیبایی درمانی پوست و مو اصفهان</title>
+          <meta
+            name="description"
+            content="کلینیک تخصصی پوست، مو و زیبایی در اصفهان ارائه‌دهنده خدمات بوتاکس، مزونیدلینگ، هایفوتراپی، تزریق فیلر، و جراحی‌های پوستی با کد نظام پزشکی معتبر دو متخصص پوست میباشد."
+          />
+          <meta
+            property="og:title"
+            content="کلینیک پوست، مو و زیبایی در اصفهان | بهترین خدمات زیبایی و درمانی"
+          />
+          <meta
+            property="og:description"
+            content="کلینیک تخصصی پوست، مو و زیبایی در اصفهان ارائه‌دهنده خدمات بوتاکس، مزونیدلینگ، هایفوتراپی، تزریق فیلر و جراحی‌های پوستی میباشد."
+          />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://yourwebsite.com" />
+          <meta
+            property="og:image"
+            content="https://yourwebsite.com/image.jpg"
+          />
+          <meta property="og:locale" content="fa_IR" />
+          <meta
+            property="og:site_name"
+            content="کلینیک زیبایی درمانی پوست و مو اصفهان"
+          />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta
+            name="twitter:title"
+            content="کلینیک پوست، مو و زیبایی در اصفهان | بهترین خدمات زیبایی و درمانی"
+          />
+          <meta
+            name="twitter:description"
+            content="کلینیک تخصصی پوست، مو و زیبایی در اصفهان ارائه‌دهنده خدمات بوتاکس، مزونیدلینگ، هایفوتراپی، تزریق فیلر و جراحی‌های پوستی میباشد."
+          />
+          <meta
+            name="twitter:image"
+            content="https://yourwebsite.com/image.jpg"
+          />
+          <meta name="twitter:site" content="@yourclinic" />
+        </Head>
         <section className={theme === "dark" ? "bg-slate-900" : "bg-slate-100"}>
           <Header />
           <Services />
-          {/*<BeforeAfter/> */}
+          <BeforeAfter />
           <ServiceCards />
           <Me />
           <OurPatients />
         </section>
-      )}
-    </>
+      </>
+    )
   );
 }
 export async function getStaticProps() {

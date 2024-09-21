@@ -1,66 +1,57 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import { MainSamples } from "../../data/MainSamples";
+import React, { useEffect } from "react";
+
+const InstagramEmbed = ({ postUrl }) => {
+  useEffect(() => {
+    // Load Instagram embed script
+    const script = document.createElement("script");
+    script.src = "//www.instagram.com/embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Remove the script only if it was added
+      const scriptTags = document.body.getElementsByTagName("script");
+      for (let i = 0; i < scriptTags.length; i++) {
+        if (scriptTags[i].src === script.src) {
+          document.body.removeChild(scriptTags[i]);
+          break;
+        }
+      }
+    };
+  }, []);
+
+  return (
+    <blockquote
+      className="instagram-media"
+      data-instgrm-permalink={postUrl}
+      data-instgrm-version="14"
+      style={{
+        background: "#FFF",
+        border: "0",
+        borderRadius: "3px",
+        boxShadow: "0 0 1px rgba(0,0,0,0.5), 0 1px 10px rgba(0,0,0,0.15)",
+        margin: "1px",
+        maxWidth: "340px",
+        minWidth: "326px",
+        padding: "0",
+        width: "99.375%",
+      }}
+    >
+      <div style={{ padding: "16px" }}>
+        <a href={postUrl} target="_blank" rel="noopener noreferrer">
+          View this post on Instagram
+        </a>
+      </div>
+    </blockquote>
+  );
+};
+
 function BeforeAfter() {
   return (
-    <>
-      <div className="container flex items-center flex-col text-center">
-        <div className="flex mb-20 mt-20 items-end w-full">
-          <hr className="border-pink-700 dark:border-slate-300  h-2 w-full z-30 opacity-65 mt-20" />
-          <h3 className="text-violet-600 dark:text-fuchsia-800 align-bottom w-full font-title text-5xl">
-            چند نمونه کار
-          </h3>
-          <hr className="border-pink-500 dark:border-slate-300  h-2 w-full z-30 opacity-65 mt-20" />
-        </div>
-        <section className="w-full relative h-[1500px] sm:h-[2400px] lg:h-[1200px] ">
-          <div className="absolute left-0 blur-sm dark:blur-3xl z-10 rounded-3xl w-full h-[224px] opacity-50 -mt-48 bg-gradient-to-r from-slate-200 to-stone-100 dark:opacity-0 dark:from-slate-100 dark:to-stone-400"></div>
-          <div className=" grid grid-cols-1 lg:grid-cols-2 h-[1500px] mt-64 md:mt-0 sm:h-[2500px] lg:h-[500px] lg:gap-10">
-            {MainSamples.map((sample, index) => (
-              <div key={index} className="flex flex-col items-center">
-                <div className="flex justify-center h-[200px] md:h-[400px] lg:h-[500px] items-end gap-5">
-                  <figure slot="first" className="before">
-                    <figcaption className="dark:bg-slate-500 dark:text-stone-50 font-title text-2xl z-10">
-                      بعد
-                    </figcaption>
-                    <Image
-                      className="dark:opacity-90"
-                      src={"/" + sample.After}
-                      width={405}
-                      height={380}
-                      alt="After"
-                    />
-                  </figure>
-                  <figure slot="second" className="after">
-                    <figcaption className="font-title text-2xl z-10 dark:bg-slate-500 dark:text-stone-50">
-                      قبل
-                    </figcaption>
-                    <Image
-                      className="dark:opacity-90"
-                      src={"/" + sample.Before}
-                      width={405}
-                      height={380}
-                      alt="Before"
-                    />
-                  </figure>
-                </div>
-                <span className="text-4xl text-neutral-800 dark:text-slate-300 bg-slate-200 dark:bg-slate-600 p-6 -mt-14 w-fit font-regular text-center relative -top-48 rounded-3xl sm:-top-0">
-                  {sample.title}
-                </span>
-              </div>
-            ))}
-            <div className="font-service text-center absolute bottom-0 w-full text-3xl">
-              <Link
-                href={"./samples"}
-                className=" transition-all text-pink-700 hover:text-pink-900 dark:text-purple-50 dark:hover:text-purple-200"
-              >
-                برای دیدن نمونه کار های بیشتر کلیک کنید!
-              </Link>
-            </div>
-          </div>
-        </section>
-      </div>
-    </>
+    <div className="flex mt-5 gap-5 justify-center">
+      <InstagramEmbed postUrl="https://www.instagram.com/p/Cto_PPjtDxa/" />
+      <InstagramEmbed postUrl="https://www.instagram.com/p/C_fWkkFtqld" />
+    </div>
   );
 }
 

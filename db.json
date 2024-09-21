@@ -1,12 +1,73 @@
 {
   "posts": [
     {
-      "id": "1",
-      "title": "تست ۱ آلفا",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaBb0Pc3hOfJVlgS3SbSovYhloKZ8gm4vko0nhTF6YU5RRSEEwwKn-EkU5F0v6mq519Y4&usqp=CAU",
+      "id": "ba491479-b0f9-424c-a764-7a8eae664835",
+      "title": "سیتوضیح",
+      "thumbnail": "",
+      "category": "articlepost",
+      "description": "آرتیکل",
+      "date": "1403/6/24",
+      "file": null,
+      "intro": ""
+    },
+    {
+      "id": "0fe3a931-4863-4912-9491-87fe3dce690d",
+      "title": "تست ۱",
+      "thumbnail": "",
       "category": "pdfpost",
-      "description": "این یک متن تست برای کار های تخصصی است.",
-      "date": "1403/6/24"
+      "description": "تست ۲",
+      "date": "1403/6/24",
+      "file": {},
+      "intro": ""
+    },
+    {
+      "id": "4c61b7ea-a77e-4139-8c2b-b83610420b9f",
+      "title": "تایتل تست",
+      "thumbnail": "",
+      "category": "articlepost",
+      "description": "تست",
+      "date": "1403/6/26",
+      "file": null,
+      "intro": "توضیح تست"
+    },
+    {
+      "id": "b96e3df0-2744-4c39-99ea-de8f804397af",
+      "title": "sasda",
+      "thumbnail": "asdad",
+      "category": "normalpost",
+      "description": "asd",
+      "date": "1403/6/27",
+      "file": null,
+      "intro": "asdas"
+    },
+    {
+      "id": "25dccfdd-5d8c-49c6-9d12-ee79f00ca9e2",
+      "title": "adsasad",
+      "thumbnail": "asdad",
+      "category": "normalpost",
+      "description": "asdada",
+      "date": "1403/6/28",
+      "file": null,
+      "intro": "asdasd"
+    },
+    {
+      "id": "f67655ef-6f3e-4834-930f-a275c181d5ce",
+      "title": "title",
+      "thumbnail": "https://img.freepik.com/free-photo/sunset-silhouettes-trees-mountains-generative-ai_169016-29371.jpg",
+      "category": "normalpost",
+      "description": "sdiahdoshoaihdad",
+      "date": "1403/6/28",
+      "file": null,
+      "intro": "test title"
+    }
+  ],
+  "UploadedFiles": [
+    {
+      "id": "3122",
+      "fileName": "cosmetologist-cleaning-face-woman-beauty-salon.jpg",
+      "fileSize": 874252,
+      "fileType": "image/jpeg",
+      "uploadDate": "2024-09-17T11:50:58.308Z"
     }
   ]
 }

@@ -19,15 +19,15 @@ function Header() {
         </h1>
         <div className="flex justify-center gap-10 mt-2">
           <Link href="#">
-            <button className="dark:bg-rose-400 dark:opacity-90 dark:hover:opacity-100  flex items-center text-2xl px-5 sm:text-3xl sm:px-10 lg:py-1 lg:p-12  xl:text-3xl 2xl:text-5xl font-button gap-1 rounded-3xl transition-all bg-red-200 hover:bg-red-300">
-              <FontAwesomeIcon icon={faStar} />
+            <button className="dark:bg-rose-400  text-nowrap dark:opacity-90 dark:hover:opacity-100  flex items-center text-2xl px-5 sm:text-3xl sm:px-10 lg:py-1 lg:p-12  xl:text-3xl 2xl:text-5xl font-button gap-1 rounded-3xl transition-all bg-red-200 hover:bg-red-300">
+              <FontAwesomeIcon className="w-10" icon={faStar} />
               <span>چرا ما ؟</span>
             </button>
           </Link>
 
           <Link href="tel:09931827935">
-            <button className="dark:bg-rose-400 dark:opacity-90 dark:hover:opacity-100 flex items-center text-2xl px-5 sm:text-3xl sm:px-10 lg:py-1 lg:p-12  xl:text-3xl 2xl:text-5xl font-button gap-1 rounded-3xl transition-all bg-red-200 hover:bg-red-300">
-              <FontAwesomeIcon icon={faPhoneFlip} />
+            <button className="dark:bg-rose-400 text-nowrap dark:opacity-90 dark:hover:opacity-100 flex items-center text-2xl px-5 sm:text-3xl sm:px-10 lg:py-1 lg:p-12  xl:text-3xl 2xl:text-5xl font-button gap-1 rounded-3xl transition-all bg-red-200 hover:bg-red-300">
+              <FontAwesomeIcon className="w-10" icon={faPhoneFlip} />
               <span>رزرو نوبت !</span>
             </button>
           </Link>

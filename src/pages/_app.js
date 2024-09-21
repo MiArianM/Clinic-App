@@ -35,7 +35,9 @@ export default function App({ Component, pageProps }) {
     }
   }, [router.pathname]);
 
-  return (
+  return loader ? (
+    <Loader />
+  ) : (
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -44,21 +46,16 @@ export default function App({ Component, pageProps }) {
         <link rel="canonical" href="https://yourwebsite.com" />
         <link rel="icon" href="/logo.png" sizes="any" />
       </Head>
-      {loader ? (
-        <Loader />
-      ) : (
+
+      <ThemeProvider attribute="class">
         <context.Provider
           value={{ menuOpen, setMenuOpen, country, setCountry }}
         >
-          <ThemeProvider attribute="class">
-            <Navbar />
-            <Component {...pageProps} />
-          </ThemeProvider>
-          <footer>
-            <Footer />
-          </footer>
+          <Navbar />
+          <Component {...pageProps} />
+          <Footer />
         </context.Provider>
-      )}
+      </ThemeProvider>
     </>
   );
 }

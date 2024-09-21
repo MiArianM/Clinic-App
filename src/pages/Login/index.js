@@ -4,10 +4,10 @@ import React from "react";
 function index() {
   return (
     <div>
-      <div class="bg-white dark:bg-gray-900">
-        <div class="flex justify-center h-screen">
+      <div className="bg-white dark:bg-gray-900">
+        <div className="flex justify-center h-screen">
           <div
-            class="hidden bg-cover lg:block lg:w-2/3 h-[70vh]"
+            className="hidden bg-cover lg:block lg:w-2/3 h-[70vh]"
             style={{
               background:
                 "url(https://i.postimg.cc/Ss4vn0SJ/cosmetologist-cleaning-face-woman-beauty-salon.jpg)",
@@ -15,13 +15,13 @@ function index() {
               backgroundPosition: "center",
             }}
           >
-            <div class="flex items-center h-full px-20 bg-gray-500 dark:bg-gray-900 dark:bg-opacity-65 bg-opacity-40">
+            <div className="flex items-center h-full px-20 bg-gray-500 dark:bg-gray-900 dark:bg-opacity-65 bg-opacity-40">
               <div>
-                <h2 class="text-4xl font-title font-bold text-white dark:text-slate-400">
+                <h2 className="text-4xl font-title font-bold text-white dark:text-slate-400">
                   کلینیک سلامت پوست مو اصفهان
                 </h2>
 
-                <p class="max-w-xl text-2xl font-regular mt-3 text-gray-900 dark:text-slate-200 bg-slate-400 bg-opacity-40 p-5 rounded-3xl">
+                <p className="max-w-xl text-2xl font-regular mt-3 text-gray-900 dark:text-slate-200 bg-slate-400 bg-opacity-40 p-5 rounded-3xl">
                   کلینیک سلامت پوست، مو و زیبایی اصفهان، تحت مدیریت دو دکتر
                   متخصص در زمینه پوست، مو و زیبایی، با بهره‌گیری از به‌روزترین
                   روش‌های درمانی و تجهیزات پیشرفته، فضایی حرفه‌ای و مطمئن برای
@@ -31,24 +31,24 @@ function index() {
             </div>
           </div>
 
-          <div class="flex items-center w-full max-w-md px-6 mx-auto lg:w-2/6">
-            <div class="flex-1">
-              <div class="text-center">
-                <h2 class="text-4xl font-title font-bold text-center text-gray-700 dark:text-white">
+          <div className="flex items-center w-full max-w-md px-6 mx-auto lg:w-2/6">
+            <div className="flex-1">
+              <div className="text-center">
+                <h2 className="text-4xl font-title font-bold text-center text-gray-700 dark:text-white">
                   کلینیک سلامت پوست مو اصفهان
                 </h2>
 
-                <p class="mt-3 font-service text-2xl text-gray-500 dark:text-gray-300">
+                <p className="mt-3 font-service text-2xl text-gray-500 dark:text-gray-300">
                   برای دسترسی به اکانت خود وارد شوید!
                 </p>
               </div>
 
-              <div class="mt-8">
+              <div className="mt-8">
                 <form>
                   <div>
                     <label
                       htmlFor="email"
-                      class="block font-button mb-2 text-sm text-gray-600 dark:text-gray-200"
+                      className="block font-button mb-2 text-sm text-gray-600 dark:text-gray-200"
                     >
                       ایمیل
                     </label>
@@ -57,21 +57,21 @@ function index() {
                       name="email"
                       id="email"
                       placeholder="example@example.com"
-                      class="font-mono block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                      className="font-mono block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     />
                   </div>
 
-                  <div class="mt-6">
-                    <div class="flex justify-between mb-2">
+                  <div className="mt-6">
+                    <div className="flex justify-between mb-2">
                       <label
                         htmlFor="password"
-                        class="text-sm font-button text-gray-600 dark:text-gray-200"
+                        className="text-sm font-button text-gray-600 dark:text-gray-200"
                       >
                         کلمه عبور
                       </label>
                       <a
                         href="#"
-                        class="text-sm font-service font-bold text-gray-400 focus:text-blue-500 hover:underline-offset-8 hover:text-blue-500 hover:underline"
+                        className="text-sm font-service font-bold text-gray-400 focus:text-blue-500 hover:underline-offset-8 hover:text-blue-500 hover:underline"
                       >
                         رمز عبور را فراموش کرده اید؟
                       </a>
@@ -82,22 +82,22 @@ function index() {
                       name="password"
                       id="password"
                       placeholder="رمزعبور"
-                      class="font-regular block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                      className="font-regular block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     />
                   </div>
 
-                  <div class="mt-6">
-                    <button class="font-button text-3xl w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:bg-blue-400 focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                  <div className="mt-6">
+                    <button className="font-button text-3xl w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:bg-blue-400 focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                       ورود
                     </button>
                   </div>
                 </form>
 
-                <p class="mt-6 text-2xl font-button text-center text-gray-400">
+                <p className="mt-6 text-2xl font-button text-center text-gray-400">
                   هنوز اکانت ندارید؟
                   <Link
                     href="/Signup"
-                    class="text-blue-500 mr-3 text-xl font-button focus:outline-none hover:underline-offset-8 focus:underline hover:underline"
+                    className="text-blue-500 mr-3 text-xl font-button focus:outline-none hover:underline-offset-8 focus:underline hover:underline"
                   >
                     ثبت نام
                   </Link>
